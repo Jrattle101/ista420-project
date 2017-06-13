@@ -1,6 +1,6 @@
 
 # Ph01-analysis
-##J ason Adams
+## Jason Adams
 ### 13 Jun 2017
 
 
