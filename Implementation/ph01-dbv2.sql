@@ -3,10 +3,9 @@
 -- Database:  ph01.db
 -- Date: 07 June 2017
 
---.echo on
---.headers on
 
-USE Project;
+
+USE Ph01;
 
 DROP TABLE IF exists teams;
 
@@ -196,4 +195,3 @@ INSERT INTO record
 	VALUES	(1, 1, 1, NULL, NULL, NULL),
 			(2, 2, 2, NULL, NULL, NULL);
 	
---.exit
