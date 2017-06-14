@@ -5,9 +5,9 @@
 
 
 
-USE [Ph01];
+USE [ista420-iteration02];
 
-DROP TABLE [teams];
+DROP TABLE if exists teams;
 
 CREATE TABLE teams (
 	TeamID INTEGER NOT NULL PRIMARY KEY,
@@ -20,7 +20,7 @@ INSERT INTO teams
 			(3, 'Dodgers'),
 			(4, 'Blue Jays');
 
-DROP TABLE [roster];
+DROP TABLE if exists roster;
 
 CREATE TABLE roster (
 	PlayerID INTEGER NOT NULL PRIMARY KEY,
@@ -77,7 +77,7 @@ INSERT INTO roster
 			(408, 4, 'D.', 'Travis', '2B', 48),
 			(409, 4, 'M.', 'Estrada', 'SP', 49);
 
-DROP TABLE [batstats];
+DROP TABLE if exists batstats;
 
 CREATE TABLE batstats (
 	BatStatID INTEGER NOT NULL PRIMARY KEY,
@@ -128,7 +128,7 @@ INSERT INTO batstats (BatStatID, PlayerID, AtBats, Hits, Average, HomeRuns, Runs
 			(47, 407, 2, 0, .000, 0, 0, 2),
 			(48, 408, 12, 1, .083, 0, 0, 1);
 
-DROP TABLE [schedule];
+DROP TABLE if exists schedule;
 
 CREATE TABLE schedule (
 	SchedID INTEGER NOT NULL PRIMARY KEY,
@@ -165,7 +165,7 @@ INSERT INTO schedule
 			(23, '12 Jan 2018', 4, 1, NULL),
 			(24, '12 Jan 2018', 2, 3, NULL);
 
-DROP TABLE [results];
+DROP TABLE if exists results;
 
 CREATE TABLE results (
 	ResultsID INTEGER NOT NULL PRIMARY KEY,
@@ -177,7 +177,7 @@ INSERT INTO results
 	VALUES	(1, 1, NULL),
 			(2, 2, NULL);
 
-DROP TABLE  [record];
+DROP TABLE if exists record;
 
 CREATE TABLE record (
 	RecordID INTEGER NOT NULL PRIMARY KEY,
@@ -193,6 +193,7 @@ INSERT INTO record
 			(2, 2, 2, NULL, NULL, NULL);
 	
 
+DROP TABLE if exists users
 
 CREATE TABLE users(
 	UserID INTEGER NOT NULL PRIMARY KEY,
